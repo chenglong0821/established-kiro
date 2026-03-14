@@ -1,0 +1,114 @@
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.countdown-card { text-align: center; }
+
+.countdown-numbers {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 6px;
+  margin: 16px 0;
+}
+
+.big-num {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.unit {
+  font-size: 16px;
+  color: var(--gray-500);
+}
+
+.exam-date {
+  font-size: 13px;
+  color: var(--gray-500);
+}
+
+.checkin-card { text-align: center; }
+
+.checkin-btn {
+  background: var(--primary);
+  color: white;
+  padding: 14px 40px;
+  font-size: 18px;
+  margin: 16px 0;
+  border-radius: 50px;
+}
+
+.checked {
+  margin: 16px 0;
+}
+
+.check-icon {
+  font-size: 40px;
+}
+
+.streak {
+  color: var(--gray-500);
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.streak span {
+  color: var(--warning);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.today-card { text-align: center; }
+
+.today-minutes {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 6px;
+  margin: 16px 0;
+}
+
+.tip {
+  font-size: 13px;
+  color: var(--gray-500);
+}
+
+.subjects-card { margin-top: 0; }
+
+.subjects {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.subject-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 12px;
+  background: var(--gray-50);
+  border-radius: 8px;
+}
+
+.subject-icon {
+  font-size: 28px;
+}
+
+.subject-item h3 {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.subject-item p {
+  font-size: 13px;
+  color: var(--gray-500);
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}

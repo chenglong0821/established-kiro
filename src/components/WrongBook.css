@@ -1,0 +1,151 @@
+.wrong-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-btn {
+  background: var(--primary);
+  color: white;
+  padding: 8px 20px;
+}
+
+.wrong-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 16px 0;
+  padding: 16px;
+  background: var(--gray-50);
+  border-radius: 8px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.form-row select {
+  flex: 1;
+}
+
+.submit-btn {
+  background: var(--success);
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.filters select {
+  width: auto;
+  min-width: 140px;
+}
+
+.question-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.question-card {
+  padding: 16px;
+  border-radius: 8px;
+  border-left: 4px solid var(--gray-300);
+  background: var(--gray-50);
+}
+
+.question-card.mastery-0 { border-left-color: var(--danger); }
+.question-card.mastery-1 { border-left-color: var(--warning); }
+.question-card.mastery-2 { border-left-color: var(--success); }
+
+.q-header {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.q-subject {
+  background: var(--primary-bg);
+  color: var(--primary);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.q-topic {
+  background: var(--gray-200);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.q-date {
+  font-size: 12px;
+  color: var(--gray-500);
+  margin-left: auto;
+}
+
+.q-content {
+  font-size: 15px;
+  margin-bottom: 8px;
+  white-space: pre-wrap;
+}
+
+.q-answer, .q-note {
+  font-size: 14px;
+  color: var(--gray-700);
+  margin-bottom: 6px;
+  white-space: pre-wrap;
+}
+
+.label {
+  font-weight: 600;
+  color: var(--gray-500);
+}
+
+.q-footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.mastery-btns {
+  display: flex;
+  gap: 6px;
+}
+
+.mastery-btn {
+  padding: 4px 12px;
+  font-size: 12px;
+  background: var(--gray-200);
+  color: var(--gray-700);
+}
+
+.mastery-btn.m-0.active { background: var(--danger); color: white; }
+.mastery-btn.m-1.active { background: var(--warning); color: white; }
+.mastery-btn.m-2.active { background: var(--success); color: white; }
+
+.review-count {
+  font-size: 12px;
+  color: var(--gray-500);
+  margin-left: auto;
+}
+
+.del-btn {
+  background: none;
+  padding: 4px 8px;
+  font-size: 16px;
+}
+
+.del-btn:hover {
+  background: var(--gray-200);
+}

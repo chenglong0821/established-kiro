@@ -1,0 +1,151 @@
+.practice-controls {
+  margin-bottom: 16px;
+}
+
+.practice-top {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.practice-top select {
+  width: auto;
+  min-width: 180px;
+}
+
+.mode-toggle {
+  display: flex;
+  gap: 4px;
+}
+
+.mode-btn {
+  padding: 6px 16px;
+  background: var(--gray-100);
+  color: var(--gray-700);
+  font-size: 13px;
+}
+
+.mode-btn.active {
+  background: var(--primary);
+  color: white;
+}
+
+.practice-stats-bar {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 12px;
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+
+.practice-stats-bar .green { color: var(--success); }
+.practice-stats-bar .red { color: var(--danger); }
+.practice-stats-bar .blue { color: var(--primary); }
+
+.reset-stats {
+  background: var(--gray-100);
+  color: var(--gray-500);
+  font-size: 12px;
+  padding: 4px 10px;
+  margin-left: auto;
+}
+
+.question-panel { }
+
+.q-info {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.q-progress {
+  margin-left: auto;
+  font-size: 13px;
+  color: var(--gray-500);
+}
+
+.q-text {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: var(--gray-900);
+}
+
+.options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option-btn {
+  text-align: left;
+  padding: 14px 16px;
+  background: var(--gray-50);
+  border: 2px solid var(--gray-200);
+  font-size: 15px;
+  line-height: 1.6;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+.option-btn:hover:not(.correct):not(.wrong) {
+  border-color: var(--primary-light);
+  background: var(--primary-bg);
+}
+
+.option-btn.selected {
+  border-color: var(--primary);
+  background: var(--primary-bg);
+}
+
+.option-btn.correct {
+  border-color: var(--success);
+  background: #f0fdf4;
+}
+
+.option-btn.wrong {
+  border-color: var(--danger);
+  background: #fef2f2;
+}
+
+.explanation {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--gray-200);
+}
+
+.result-tag {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.result-tag.correct {
+  background: #f0fdf4;
+  color: var(--success);
+}
+
+.result-tag.wrong {
+  background: #fef2f2;
+  color: var(--danger);
+}
+
+.explain-text {
+  font-size: 14px;
+  color: var(--gray-700);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.primary-btn {
+  background: var(--primary);
+  color: white;
+  padding: 10px 24px;
+  font-size: 15px;
+}
